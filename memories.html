@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memories Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) ;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 20px;
+        color: #white;
+        font-size: 32px;
+    }
+
+    .post {
+        width: 90%;
+        max-width: 900px;
+        margin: 25px auto;
+        background: white;
+        border-radius: 12px;
+        border: 2px solid #667eea;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(255, 110, 170, 0.2);
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .carousel img {
+        width: 300%;
+        height: 550px;
+        object-fit: cover;
+    }
+
+    /* Navigation arrows */
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.4);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .left { left: 10px; }
+    .right { right: 10px; }
+
+    .caption {
+        padding: 12px;
+        font-size: 16px;
+        color: #444;
+    }
+
+</style>
+</head>
+<body>
+
+<h1 calss="heading">✨ Memories ✨</h1>
+
+<!-- POST 1 -->
+<style>
+.carousel-container {
+  position: relative;
+  width: 900px; /* adjust as needed */
+  overflow: hidden;
+}
+.carousel-container { left: 310px; }
+.carousel-container { right: 310px; }
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 400px; /* same as container */
+  flex-shrink: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.heading {
+  color: whitesmoke;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+</style>
+<h2 class="photo-heading">Ganesh Chaturthi</h2>
+<div class="carousel-container">
+  <div class="carousel" id="carousel3">
+            <img src="./meomriespic/diwalipicganesh.jpg">
+            <img src="./meomriespic/diwaligrp.jpg">
+            <img src="./meomriespic/diwalipic.jpg">
+            <img src="./meomriespic/diwalipic1.jpg">
+  </div>
+  <button class="arrow left" onclick="prev(3)">&#10094;</button>
+  <button class="arrow right" onclick="next(3)">&#10095;</button>
+  
+</div>
+
+
+
+
+<br>
+<br>
+
+<!-- POST 2 -->
+<style>
+.carousel1-container {
+  position: relative;
+  width: 900px; /* adjust as needed */
+  overflow: hidden;
+}
+.carousel1-container { left: 310px; }
+.carousel1-container { right: 310px; }
+
+.carousel1 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel1 img {
+  width: 400px; /* same as container */
+  flex-shrink: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+</style>
+<h2 class="photo-heading">Teachers Day</h2>
+<div class="carousel1-container">
+  <div class="carousel1" id="carousel3">
+            <img src="./meomriespic/teachersday.jpg">
+            <img src="./meomriespic/teachersday1.jpg">
+            <img src="./meomriespic/teachersday2.jpg">
+            <img src="./meomriespic/teachersday4.jpg">
+            <img src="./meomriespic/techersday4.jpg0.
+            .
+            ">
+  </div>
+  <button class="arrow left" onclick="prev(3)">&#10094;</button>
+  <button class="arrow right" onclick="next(3)">&#10095;</button>
+  
+</div>
+<br>
+<br>
+
+<!-- POST 3 -->
+<style>
+.carousel2-container {
+  position: relative;
+  width: 900px; /* adjust as needed */
+  overflow: hidden;
+}
+.carousel2-container { left: 310px; }
+.carousel2-container { right: 310px; }
+
+.carousel2 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel2 img {
+  width: 400px; /* same as container */
+  flex-shrink: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(85, 60, 184);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.photo-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 10px;
+    color: #ffffff;
+    border-bottom: 4px solid #fffdfb; /* simple underline */
+    padding-bottom: 5px;
+  }
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }A
+</style>
+<h2 class="photo-heading">Diwali Eve Celebration</h2>
+<div class="carousel2-container">
+  <div class="carousel2" id="carousel3">
+            <img src="./memoriespic/mmm">
+            <img src="./meomriespic/DE.jpg">
+            <img src="./meomriespic/DIWALIEVE3.jpg">
+            <img src="./meomriespic/DIWALIEVEGRP1.jpg">
+            
+            
+  </div>
+  <button class="arrow left" onclick="prev(3)">&#10094;</button>
+  <button class="arrow right" onclick="next(3)">&#10095;</button>
+  
+</div>
+
+
+/* <!-- <script>
+const indices = {}; // store index per carousel
+
+function showSlide(carousel2Id, index) {
+  const carousel2 = document.getElementById("carousel2" + carousel2Id);
+  const totalSlides = carousel2.children.length;
+  const slideWidth = carousel2.children[0].clientWidth;
+
+  if (!(carousel2Id in indices)) indices[carousel2Id] = 0;
+
+  if (index < 0) index = totalSlides - 1;
+  if (index >= totalSlides) index = 0;
+
+  indices[carousel2Id] = index;
+  carousel2.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+function prev(carousel2Id) {
+  showSlide(carousel2Id, indices[carousel2Id] - 1);
+}
+
+function next(carousel2Id) {
+  showSlide(carousel2Id, indices[carousel2Id] + 1);
+}
+
+// initialize
+showSlide(3, 0);
+</script>
+
+
+<script>
+let index = {1:0, 2:0, 3:0};
+
+function next(id) {
+    const carousel2 = document.getElementById(carousel2${id});
+    const total = carousel2.children.length;
+    if(index[id] < total - 1) index[id]++;
+    carousel2.style.transform = translateX(${-index[id] * 100}%);
+}
+
+function prev(id) {
+    const carousel2 = document.getElementById(carousel2${id});
+    if(index[id] > 0) index[id]--;
+    carousel2.style.transform = translateX(${-index[id] * 100}%);
+}
+</script> --> */
+
+</body>
+</html>
+<script>
+  function moveSlide(direction) {
+    // button that was clicked
+    const btn = event.target;
+    // its parent container (.carousel-container, .carousel1-container, .carousel2-container)
+    const container = btn.parentElement;
+
+    // find the track inside this container
+    const track = container.querySelector('.carousel, .carousel1, .carousel2');
+    if (!track) return;
+
+    const slides = track.querySelectorAll('img');
+    if (slides.length === 0) return;
+
+    // current index stored on the container
+    let index = parseInt(container.dataset.index || '0', 10);
+
+    index += direction;
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+
+    container.dataset.index = index;
+
+    const slideWidth = slides[0].clientWidth;
+    track.style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
+  }
+
+  function next() {
+    moveSlide(1);
+  }
+
+  function prev() {
+    moveSlide(-1);
+  }
+
+  // initialize all carousels to the first image
+  window.addEventListener('load', function () {
+    document.querySelectorAll('.carousel, .carousel1, .carousel2').forEach(function (track) {
+      track.style.transform = 'translateX(0)';
+    });
+  });
+</script>
